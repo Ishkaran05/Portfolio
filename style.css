@@ -1,13 +1,14 @@
-/* General Page Styles */
+/* ---------- GENERAL PAGE STYLES ---------- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Header Section */
+/* ---------- HEADER SECTION ---------- */
 header {
     background-color: #222;
     color: white;
@@ -20,7 +21,30 @@ header h1 {
     font-size: 2em;
 }
 
-/* Sections */
+header p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #0078d7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #005fa3;
+}
+
+/* ---------- SECTIONS ---------- */
 section {
     max-width: 800px;
     margin: 40px auto;
@@ -36,18 +60,18 @@ h2 {
     padding-bottom: 8px;
 }
 
-/* Skills List */
+/* ---------- SKILLS LIST ---------- */
 ul {
     list-style-type: square;
     padding-left: 20px;
 }
 
-/* Projects */
+/* ---------- PROJECTS ---------- */
 .project {
     margin-bottom: 15px;
 }
 
-/* Contact Links */
+/* ---------- CONTACT LINKS ---------- */
 a {
     color: #0078d7;
     text-decoration: none;
@@ -57,7 +81,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Footer */
+/* ---------- FOOTER ---------- */
 footer {
     text-align: center;
     background-color: #222;
@@ -65,3 +89,33 @@ footer {
     padding: 15px 0;
     margin-top: 30px;
 }
+
+/* ---------- DARK MODE STYLES ---------- */
+body.dark-mode {
+    background-color: #121212;
+    color: #eee;
+}
+
+body.dark-mode header {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode section {
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode a {
+    color: #4da3ff;
+}
+
+body.dark-mode footer {
+    background-color: #1f1f1f;
+}
+
+/* ---------- TYPING EFFECT ---------- */
+.typing {
+    color: #00aaff;
+    font-weight: bold;
+}
+
